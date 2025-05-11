@@ -13,7 +13,13 @@
         <input type="number" name="tel" placeholder="Téléphone" required>
         <input type="email" name="email" placeholder="Votre e-mail" required>
         <input type="text" name="commande" placeholder="Description rapide de votre commande" id="input2" required>
-        <button type="submit">Envoyer</button>
+        <button type="submit" onclick="submit()">Envoyer</button>
     </form>
+
+    <script>
+        function submit() {
+             alert("votre message as bien été envoyé !");
+        };
+    </script>
 </body>
 </html>
