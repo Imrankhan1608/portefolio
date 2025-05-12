@@ -45,3 +45,16 @@ app.post('/send', (req, res) => {
 app.listen(3000, () => {
   console.log('Serveur démarré sur http://localhost:3000');
 });
+
+
+
+const PORT = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello from Express on Render!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
