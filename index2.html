@@ -8,11 +8,11 @@
 </head>
 <h1>Veuillez remplir ce formulaire s'il vous plaît !</h1>
 <body>
-    <form action="https://formsubmit.co/i001c.2425@gmail.com.com" method="POST">
-        <input type="text" name="nom" placeholder="Votre nom" required>
-        <input type="number" name="tel" placeholder="Téléphone" required>
-        <input type="email" name="email" placeholder="Votre e-mail" required>
-        <input type="text" name="commande" placeholder="Description rapide de votre commande" id="input2" required>
+    <form action="https://localhost:3000/send-mail" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required name="name">
+        <input type="number" name="tel" placeholder="Téléphone" required name="number">
+        <input type="email" name="email" placeholder="Votre e-mail" required name="e-mail">
+        <input type="text" name="commande" placeholder="Description rapide de votre commande" id="input2" required name="message">
         <button type="submit">Envoyer</button>
     </form>
 
