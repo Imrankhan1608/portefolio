@@ -1,0 +1,12 @@
+# Exported from Render on 2025-06-08T16:55:34Z
+services:
+- type: web
+  name: Devellopeur web Majunga
+  runtime: node
+  repo: https://github.com/Imrankhan1608/portefolio
+  plan: free
+  region: oregon
+  buildCommand: npm install
+  startCommand: node index.js
+  autoDeployTrigger: commit
+version: "1"
